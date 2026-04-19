@@ -9,31 +9,31 @@
     <title>Document</title>
 </head>
 
-<body id="beach_page">
+<body id="rain_page">
     <main>
         <section class="content">
-            <h1>waves lapping on beach</h1>
+            <h1>light evening rain</h1>
             <section class="main">
                 <a href="index.html">storm</a>
                 <a href="beach.html">beach</a>
-                <a href="rain.html">rain</a>
+                <button>rain</button>
             </section>
             <section class="settings">
-                <button class="play">play</button>
-                <label for="volume">volume: </label>
-                <input type="range" class="volume" name="volume" id="volume" min="0" max="100" value="100"><span class="level"> </span>
-                <button class="mute ">mute</button>
+                <button class="play">Play</button>
+                <label for="volume">Volume: </label>
+                <input type="range" class="volume" id="volume" name="volume" min="0" max="100" value="100"><span class="level"> </span>
+                <button class="mute ">Mute</button>
                 <audio loop class="sound">
-                    <source src="sounds/sea.wav" type="audio/wav">
+                    <source src="sounds/rain.wav" type="audio/wav">
                 </audio>
-                <button class="hide">hide content</button>
-                <button class="stop" id="stop_beach">stop animation</button>
+                <button class="hide">Hide Content</button>
+                <button class="stop" id="stop_rain">stop animation</button>
             </section>
             <section class="credits">
                 <a href="credits.html">view credits</a>
             </section>
         </section>
-        <button hidden class="show">show content</button>
+        <button hidden class="show">Show Content</button>
     </main>
     <script src="js/javascript.js"></script>
 </body>
