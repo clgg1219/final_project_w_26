@@ -113,3 +113,18 @@ a:hover {
     color: black;
     text-decoration: underline;
 }
+
+@media (prefers-reduced-motion: reduce) {
+    #storm_page {
+        background-image: url(../media/storm_still.png);
+    }
+    #beach_page {
+        background-image: url(../media/beach_still.png);
+    }
+    #rain_page {
+        background-image: url(../media/rain_still.png);
+    }
+    .stop {
+        display: none;
+    }
+}
