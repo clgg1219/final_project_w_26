@@ -42,9 +42,12 @@ show.addEventListener("click", function () {
     console.log("shown content");
 })
 
+/*Check to see if stop_element exists first; wrap everything in if (stop_element)*/
+
 let stop_storm = document.getElementById("stop_storm");
-let storm_bg = document.getElementById("storm_page");
-stop_storm.addEventListener("click", function() {
+if (stop_storm) {
+    let storm_bg = document.getElementById("storm_page");
+    stop_storm.addEventListener("click", function() {
     if (stop_storm.textContent == "stop animation") {
         storm_bg.style.backgroundImage = "url(/media/storm_still.png)";
         stop_storm.textContent = "start animation";
@@ -55,10 +58,13 @@ stop_storm.addEventListener("click", function() {
         console.log("started animation");
     }
 })
+}
+
 
 let stop_beach = document.getElementById("stop_beach");
-let beach_bg = document.getElementById("beach_page");
-stop_beach.addEventListener("click", function() {
+if (stop_beach){
+    let beach_bg = document.getElementById("beach_page");
+    stop_beach.addEventListener("click", function() {
     if (stop_beach.textContent == "stop animation") {
         beach_bg.style.backgroundImage = "url(/media/beach_still.png)";
         stop_beach.textContent = "start animation";
@@ -68,11 +74,14 @@ stop_beach.addEventListener("click", function() {
         stop_beach.textContent = "stop animation";
         console.log("started animation");
     }
-})
+    })
+}
+
 
 let stop_rain = document.getElementById("stop_rain");
-let rain_bg = document.getElementById("rain_page");
-stop_rain.addEventListener("click", function() {
+if (stop_rain) {
+    let rain_bg = document.getElementById("rain_page");
+    stop_rain.addEventListener("click", function() {
     if (stop_rain.textContent == "stop animation") {
         rain_bg.style.backgroundImage = "url(/media/rain_still.png)";
         stop_rain.textContent = "start animation";
@@ -81,3 +90,5 @@ stop_rain.addEventListener("click", function() {
         stop_rain.textContent = "stop animation";
     }
 })
+}
+
