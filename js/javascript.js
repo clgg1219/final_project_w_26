@@ -43,38 +43,41 @@ show.addEventListener("click", function () {
 })
 
 let stop_storm = document.getElementById("stop_storm");
+let storm_bg = document.getElementById("storm_page");
 stop_storm.addEventListener("click", function() {
     if (stop_storm.textContent == "stop animation") {
-        document.body.style.backgroundImage = "url(/media/storm_still.png)";
+        storm_bg.style.backgroundImage = "url(/media/storm_still.png)";
         stop_storm.textContent = "start animation";
         console.log("stopped animation");
     } else {
-        document.body.style.backgroundImage = "url(/media/storm.gif)";
+        storm_bg.style.backgroundImage = "url(/media/storm.gif)";
         stop_storm.textContent = "stop animation";
         console.log("started animation");
     }
 })
 
 let stop_beach = document.getElementById("stop_beach");
+let beach_bg = document.getElementById("beach_page");
 stop_beach.addEventListener("click", function() {
     if (stop_beach.textContent == "stop animation") {
-        document.body.style.backgroundImage = "url(/media/beach_still.png)";
+        beach_bg.style.backgroundImage = "url(/media/beach_still.png)";
         stop_beach.textContent = "start animation";
         console.log("stopped animation");
     } else {
-        document.body.style.backgroundImage = "url(/media/beach.gif)";
+        beach_bg.style.backgroundImage = "url(/media/beach.gif)";
         stop_beach.textContent = "stop animation";
         console.log("started animation");
     }
 })
 
 let stop_rain = document.getElementById("stop_rain");
+let rain_bg = document.getElementById("rain_page");
 stop_rain.addEventListener("click", function() {
     if (stop_rain.textContent == "stop animation") {
-        document.body.style.backgroundImage = "url(/media/rain_still.png)";
+        rain_bg.style.backgroundImage = "url(/media/rain_still.png)";
         stop_rain.textContent = "start animation";
     } else {
-        document.body.style.backgroundImage = "url(/media/rain.gif)";
+        rain_bg.style.backgroundImage = "url(/media/rain.gif)";
         stop_rain.textContent = "stop animation";
     }
 })
