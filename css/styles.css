@@ -43,6 +43,11 @@ main {
     min-height: 100vh;
 }
 
+.selected {
+    background-color: white;
+    color: black;
+}
+
 .content {
     background-color: rgba(0, 0, 0, 0.476);
     border-radius: 8px;
