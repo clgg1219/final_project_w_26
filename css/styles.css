@@ -164,3 +164,34 @@ a:hover {
         display: none;
     }
 }
+
+@media (max-width: 700px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .settings {
+        display: flex;
+        flex-direction: column;
+        flex: 0;
+    }
+    .credits {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    a {
+        margin: 10px;
+    }
+
+    button {
+        margin: 10px;
+    }
+}
