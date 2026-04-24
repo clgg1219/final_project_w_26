@@ -137,6 +137,19 @@ a:hover {
     color: black;
 }
 
+#go_home {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    border: solid 1px black;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+#go_home:hover {
+    text-decoration: underline;
+}
+
 @media (prefers-reduced-motion: reduce) {
     #storm_page {
         background-image: url(../media/storm_still.png);
