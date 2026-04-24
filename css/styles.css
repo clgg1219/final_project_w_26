@@ -119,6 +119,24 @@ a:hover {
     text-decoration: underline;
 }
 
+#storm_info, #beach_info, #rain_info {
+    display: none;
+}
+
+.skip {
+    position: relative;
+    top: -65px;
+    background-color: white;
+    color: black;
+}
+
+.skip:focus {
+    position: relative;
+    top: 30px;
+    background-color: white;
+    color: black;
+}
+
 @media (prefers-reduced-motion: reduce) {
     #storm_page {
         background-image: url(../media/storm_still.png);
